@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cfg="$HOME/.config/mark"
+[ -d "$cfg/named" ] || mkdir -p "$cfg/named" 
+
+m "$@" "$PWD"
+exit $?

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cfg="$HOME/.config/mark"
+[ -d "$cfg/named" ] || mkdir -p "$cfg/named" 
+
+echo default: $(cat "$cfg/default")
+for i in $(ls "$cfg/named/"); do
+    echo "$i: $(cat $cfg/named/$i)"
+done
+
