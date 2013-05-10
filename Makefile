@@ -5,7 +5,7 @@ all :: install showcm
 showcm ::
 	@cat cm
 
-install :: all
+install :: 
 	mkdir -p ${DESTDIR}${PREFIX}/bin
 	cp -f m mcd mo vm ${DESTDIR}${PREFIX}/bin/
 	chmod 755 ${DESTDIR}${PREFIX}/bin/m
